@@ -10,6 +10,7 @@ int zgodne_do_mnozenia(int wA, int kA, int wB, int kB) {
     return (kA == wB);
 }
 
+
 void dodaj(double A[][MAX], double B[][MAX], double C[][MAX], int w, int k) {
     int i, j;
     for (i = 0; i < w; i++) {
@@ -19,13 +20,20 @@ void dodaj(double A[][MAX], double B[][MAX], double C[][MAX], int w, int k) {
     }
 }
 
+
+
+
+
+
+
+
 void odejmij(double A[][MAX], double B[][MAX], double C[][MAX], int w, int k) {
     int i, j;
     for (i = 0; i < w; i++) {
         for (j = 0; j < k; j++) {
             C[i][j] = A[i][j] - B[i][j];
         }
-    }
+        }
 }
 
 void pomnoz(double A[][MAX], double B[][MAX], double C[][MAX], int wA, int kA, int kB) {
