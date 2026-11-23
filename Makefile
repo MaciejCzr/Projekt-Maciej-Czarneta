@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c11
+CFLAGS = -std=c90 -Wall -Wextra -pedantic
 
 all: program
 
