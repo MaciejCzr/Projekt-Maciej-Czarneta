@@ -5,6 +5,8 @@ int zgodne_do_sumy(int wA, int kA, int wB, int kB) {
 }
 
 int zgodne_do_mnozenia(int wA, int kA, int wB, int kB) {
+    (void)wA;
+    (void)kB;
     return (kA == wB);
 }
 
@@ -30,7 +32,7 @@ void pomnoz(double A[][MAX], double B[][MAX], double C[][MAX], int wA, int kA, i
     int i, j, k;
     for (i = 0; i < wA; i++) {
         for (j = 0; j < kB; j++) {
-            C[i][j] = 0;
+            C[i][j] = 0.0;
             for (k = 0; k < kA; k++) {
                 C[i][j] += A[i][k] * B[k][j];
             }
